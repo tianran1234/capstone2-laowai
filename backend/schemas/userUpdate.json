@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "password": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 20
+    },
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "email": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 60,
+      "format": "email"
+    },
+    "imageUrl": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 60,
+      "format": "url"
+    },
+    "headerImageUrl": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 60,
+      "format": "url"
+    },
+    "college": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 30
+    },
+    "proficiencyOfChinese": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "currentCity": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 30
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}

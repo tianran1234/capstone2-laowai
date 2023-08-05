@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/companySearch.schema.json",
+  "type": "object",
+  "properties": {
+    "keyword": {
+      "type": "string",
+      "minLength": 0
+    },
+    "hasContent": {
+      "type": "string",
+      "minLength": 0
+    },
+    "title": {
+      "type": "string",
+      "minLength": 0
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}
