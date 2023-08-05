@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LaoWaiApi from "../api/api";
-
+import "./AnswerDetail.css";
 
 /** Show page with list of answers of a question.
  *
@@ -30,7 +30,7 @@ function AnswerList({id}) {
         ? (
             <div className="AnswerList-list">
               {answers.map(a => (
-                  <div>
+                  <div className="AnswerDetail">
                     <p><small>Answered by {a.username} at {a.postedat}</small></p>
                     <h6>{a.body}</h6>
                   </div>

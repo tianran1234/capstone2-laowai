@@ -1,0 +1,20 @@
+h4 {
+  font-size: 100px;
+}
+
+#profile-image {
+  border-radius: 100%;
+  display: block;
+  margin-left: -15px;
+  margin: 0 auto 15px;
+  width: 100%;
+}
+
+
+#warbler-hero {
+  height: 360px;
+  margin-top: -16px;
+  opacity: 0.7;
+  background-size: cover;
+  background-position: top center;
+}

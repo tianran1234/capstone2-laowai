@@ -6,13 +6,15 @@ function UserProfile({user}) {
 
     return (
         <div className="UserProfile col-md-8 offset-md-2">
-          <h4>{user.username}</h4>
-          <h4>{user.headerimageurl}</h4>
-          <h4>Affiliation: {user.college}</h4>
-          <h4>Proficiency of Chinese: {user.proficiencyofchinese}</h4>
-          {user.hometown? <h4>From: {user.hometown}</h4> : null}
-          {user.currentcity? <h4>Currently live at: {user.currentcity}</h4> : null}
-          <h4>Member since: {user.since}</h4>
+          <h3>{user.username}</h3>
+          <div className="profile-image">
+            {user.headerimageurl}
+          </div>
+          <h6>Affiliation: {user.college}</h6>
+          <h6>Proficiency of Chinese: {user.proficiencyofchinese}</h6>
+          {user.hometown? <h6>From: {user.hometown}</h6> : null}
+          {user.currentcity? <h6>Currently live at: {user.currentcity}</h6> : null}
+          <h6>Member since: {user.since}</h6>
         </div>
     );
 }

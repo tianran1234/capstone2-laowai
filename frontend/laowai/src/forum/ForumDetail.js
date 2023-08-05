@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import LaoWaiApi from "../api/api";
 import LoadingSpinner from "../common/LoadingSpinner";
 import AnswerList from "../answers/AnswerList";
+import "./ForumDetail.css";
 
 /** Question Detail page.
  *
@@ -31,14 +32,18 @@ function ForumDetail() {
 
 
   return (
+    <div>
       <div className="ForumDetail col-md-8 offset-md-2">
         <h4>{question.title}</h4>
-        <p>by {question.username} posted at: {question.postedat}</p>
+        <p>Posted by {question.username} at: {question.postedat}</p>
         <p>{question.body}</p>
-        <Link to={`/forum/${id}/answers/new`}><button>Post an answer</button></Link>
-        <AnswerList id={id}/>
-        <Link to={`/forum`}><button>Go back</button></Link>
+        <div className="answers">
+          <AnswerList id={id}/>
+        </div>
       </div>
+      <Link to={`/forum/${id}/answers/new`}><button id="answerbtn">Post an answer</button></Link>
+      <Link to={`/forum`}><button id="backbtn">Go back</button></Link>
+    </div>
   );
 }
 

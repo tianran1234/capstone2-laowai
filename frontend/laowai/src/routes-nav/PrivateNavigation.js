@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import UserContext from "../auth/UserContext";
-import "./Navigation.css";
+import "./PrivateNavigation.css";
 
 /** /** "Higher-Order Component" for private navigation for logged in users. Shows up on user's page.
  *
@@ -17,18 +17,18 @@ function PrivateNavigation({username}) {
 
   function loggedInPrivateNav() {
     return (
-        <ul className="navbar-nav.subnav-menu ml-auto">
-          <li className="nav-item mr-4">
+        <ul className="navbar-nav">
+          <li className="navbar-brand">
             <NavLink className="nav-link.navbar-title-link" to={`/${username}/posts`}>
               Posts
             </NavLink>
           </li>
-          <li className="nav-item mr-4">
+          <li className="navbar-brand">
             <NavLink className="nav-link.navbar-title-link" to={`/${username}/friends`}>
               Friends
             </NavLink>
           </li>
-          <li className="nav-item mr-4">
+          <li className="navbar-brand">
             <NavLink className="nav-link.navbar-title-link" to={`/${username}/friend_requests`}>
               Friend Requests
             </NavLink>
@@ -38,7 +38,7 @@ function PrivateNavigation({username}) {
   }
 
   return (
-      <nav className="Navigation navbar.subnav navbar-expand-md">
+      <nav className="PrivateNavigation navbar.subnav navbar-expand-md">
         {currentUser ? loggedInPrivateNav() : null}
       </nav>
   );
