@@ -46,16 +46,15 @@ class Question {
                     `SELECT id,
                             title,
                             username,
+                            body,
                             posted_at AS postedAt
                  FROM questions 
                  ORDER BY postedAt DESC`
     );
 
-    const questions = result.rows;
+    if (!result.rows) throw new NotFoundError(`No questions posted yet.`);
 
-    if (!questions) throw new NotFoundError(`No questions posted yet.`);
-
-    return questions;
+    return result.rows;
   }
 
 

@@ -17,7 +17,6 @@ const postRoutes = require("./routes/posts");
 const friendRoutes = require("./routes/friends");
 const friendRequestRoutes = require("./routes/friendRequests");
 const followRoutes = require("./routes/follows");
-const followerRoutes = require("./routes/followers");
 const likeRoutes = require("./routes/likes");
 const answerRoutes = require("./routes/answers");
 
@@ -37,7 +36,6 @@ app.use("/announcements", announcementRoutes);
 app.use("/announcement_requests", announcementRequestRoutes);
 app.use("/forum", forumRoutes);
 app.use("/", userRoutes);
-app.use("/", followerRoutes);
 app.use("/", followRoutes);
 app.use("/", postRoutes);
 app.use("/", friendRoutes);
