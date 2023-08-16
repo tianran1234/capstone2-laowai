@@ -13,11 +13,15 @@ Step 1: start postgresql
 ```bash
 sudo service postgresql start
 ```
-Step 2: switch node to a lower version (use nvm install instead if there is none) 
+Step 2: seed the database 
+```bash
+psql < laowai.sql
+```
+Step 3: switch node to a lower version (use nvm install instead if there is none) 
 ```bash
 nvm use 14.18.3
 ```
-Step 3: 
+Step 4: 
 ```bash
 node server.js
 ```
