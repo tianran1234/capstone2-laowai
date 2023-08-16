@@ -13,11 +13,15 @@ Step 1: start postgresql
 ```bash
 sudo service postgresql start
 ```
-Step 2: switch node to a lower version (use nvm install instead if there is none) 
+Step 2: seed the database 
+```bash
+psql < laowai.sql
+```
+Step 3: switch node to a lower version (use nvm install instead if there is none) 
 ```bash
 nvm use 14.18.3
 ```
-Step 3: 
+Step 4: 
 ```bash
 node server.js
 ```
@@ -39,6 +43,7 @@ npm start
 The browser will automatically direct you to the designated portal once the server and the front end start running.
 
 Here is a screen shot of the homepage: 
+![laowai-homepage](https://github.com/tianran1234/laowai/assets/115170399/83d32283-3525-411a-bb39-f20152314066)
 
  
 A user will be able to browse the announcements and the forum questions (including answers if there is any) without sign up or log in their own account.
