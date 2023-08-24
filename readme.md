@@ -76,7 +76,7 @@ A logged in user will also be able to visit other users’ personal pages, view 
 To run the backend tests:
 
 ```bash
-    jest 
+    jest [test_file_name]
 ```
 
 To run the frontend tests:
