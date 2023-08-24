@@ -6,6 +6,7 @@ It includes the postgresql database, the flask backend and the react.js front en
 
 
 ## LaoWai API
+
 List all announcements: 
 router.get("/announcements")
 
@@ -116,11 +117,16 @@ npm start
 
 ## Usage
 
+### Credentials
+A user's account has been created in the database. Once may use the credentails below to utilize the full functions of this app:
+username: testuser1
+password: password
+
+### Homepage
 The browser will automatically direct you to the designated portal (http://localhost:3000/) once the server and the front end start running.
 
 Here is a screen shot of the homepage: 
 ![laowai-homepage](https://github.com/tianran1234/laowai/assets/115170399/83d32283-3525-411a-bb39-f20152314066)
-
  
 A user will be able to browse the announcements and the forum (including questions along with answers if there is any) without sign up or log in their own account.
 
@@ -136,7 +142,6 @@ However, for a logged in user, they will see the request form like below:
 
 Once you click on the title of an announcement, you will be able to view the details. Here is a screen shot of an announcement:
 ![announcement](https://github.com/tianran1234/laowai/assets/115170399/9b750f37-bc4a-46df-877f-d4482844a116)
-
 
 ### Forum
 If one click on the "forum" tab on the homepage, they will be directed to the forum page as shown below:
@@ -156,17 +161,24 @@ However, for a logged in user, they will see the answer form like below:
 ![answerform](https://github.com/tianran1234/laowai/assets/115170399/f03d4796-7e50-4801-aed1-a9d4263ccac7)
 
 ### Log in/ Sign up
-If a user would like to look up other users by users’ names, they will need to register/log in account first by click on the "Log in" or "Sign up" tab on the homepage.
+A user can register/log in account by click on the "Log in" or "Sign up" tab on the homepage.
 
 Here is a screen shot of what a sign up page looks like:
 ![singup](https://github.com/tianran1234/laowai/assets/115170399/3465674e-7bb0-4668-88ce-6e4b41c94627)
 
-Again, once registered/logged in, they will be able to send request to make an announcement, to post a question on forum, or to post answers to forum questions, as well as access their personal account. 
+Once registered/logged in, they will be able to send request to make an announcement, to post a question on forum, or to post answers to forum questions, as well as access their personal account. 
 
-### Log in/ Sign up
-On their personal page, it will display some of the user’s personal information (username, affiliation, proficiency in Chinese, hometown, current city etc). A user will also be able to make new personal posts, accept/decline any friend requests, and manage their current friend list.
+### Account
+A user can access their peronal account by click on the "Account" tab on the homepage as shown below:
+![account](https://github.com/tianran1234/laowai/assets/115170399/fe78364e-88d3-4e9e-98a5-39f763e96fb4)
 
-A logged in user will also be able to visit other users’ personal pages, view their posts and like/unlike the posts. They will also be able to send friend request/unfriend that user. But they won’t be able to access other users’ friend requests or friend lists.
+On their personal page, it will display some of the user’s personal information (username, affiliation, proficiency in Chinese, hometown, current city etc). A user will also be able to make new personal posts, manage their current friend list and accept/decline any friend requests.
+
+### Search
+A logged in user will also be able to visit other users’ personal pages by typing the username they need to look up in the search box in the navigation bar as shown below:
+![search](https://github.com/tianran1234/laowai/assets/115170399/e1ae2fe3-ed52-4e91-8dc5-b38303df1b7f)
+
+A user can view other user's posts and like/unlike the posts. They will also be able to send friend request/unfriend that user. But they won’t be able to access other users’ friend requests or friend lists.
 
 
 ## Testing
