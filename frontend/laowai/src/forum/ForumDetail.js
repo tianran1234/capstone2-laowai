@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LaoWaiApi from "../api/api";
-import LoadingSpinner from "../common/LoadingSpinner";
 import AnswerList from "../answers/AnswerList";
 import "./ForumDetail.css";
 
@@ -28,7 +27,12 @@ function ForumDetail() {
     getQuestion();
   }, [id]);
 
-  if (!question) return <LoadingSpinner />;
+  if (!question) return (
+    <div>
+      <h4>Sorry, the question doesn't exist.</h4>;
+      <Link to={`/forum`}><button>Go back</button></Link>
+    </div>
+  )
 
 
   return (

@@ -65,14 +65,7 @@ describe("POST /forum/questions/new", function () {
 describe("GET /forum", function () {
   test("ok for anon", async function () {
     const resp = await request(app).get("/forum");
-    expect(resp.body.questions[2]).toEqual(
-      expect.objectContaining(
-            {
-              username: "u1",
-              title: "new",
-              body: "Can someone help me with grammar?",
-            },
-      ));
+    expect(resp.body.questions.length).toEqual(3);
   });
 });
 

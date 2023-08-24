@@ -29,6 +29,7 @@ function UserPage() {
 
   useEffect(function getUserOnMount() {
     async function showUser() {
+      setUsers(null);
       const users = await LaoWaiApi.getUser(username);
       setUsers(users);
     }

@@ -112,7 +112,8 @@ class FriendRequest {
               WHERE id = $1
               RETURNING id`, [id]);
 
-    return declined = result.rows[0];
+    let declined = result;
+    return declined;
   }
 
 }

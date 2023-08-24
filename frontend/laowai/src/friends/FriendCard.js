@@ -28,7 +28,7 @@ function FriendCard({ id, friend_username, header_image_url, since }) {
       {isFriend
         ? (
           <div>
-            <Link className="FriendCard card" to={`/${friend_username}`}>
+            <Link className="FriendCard card" to={`/users/${friend_username}`}>
               <div className="card-body">
                 <h6 className="card-title">
                   {friend_username}

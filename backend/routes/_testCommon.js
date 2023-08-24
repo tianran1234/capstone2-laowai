@@ -6,9 +6,11 @@ const Question = require("../models/question");
 const { createToken } = require("../helpers/tokens");
 
 async function commonBeforeAll() {
+  await db.query(`DELETE FROM questions`);
+
   await db.query(`DELETE FROM users`);
 
-  await db.query(`DELETE FROM questions`);
+  await db.query(`ALTER SEQUENCE questions_id_seq RESTART WITH 1`);
 
   await User.register({
     username: "u1",

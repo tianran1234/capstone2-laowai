@@ -142,7 +142,7 @@ describe("getAll", function () {
 describe("get", function () {
   test("works", async function () {
     let user = await User.get("u1");
-    expect(user).toEqual(
+    expect(user[0]).toEqual(
       expect.objectContaining({
       username: "u1",
       firstname: "U1F",

@@ -11,8 +11,6 @@ import React from "react";
 function LikeList({likedby, like}) {
   console.debug("LikeList");
 
-  console.log(like);
-
 
   return (
     <div>

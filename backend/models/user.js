@@ -174,11 +174,11 @@ class User {
         [username]
     );
 
-    const user = result.rows[0];
+    const users = result.rows;
 
-    if (!user) throw new NotFoundError(`No User: ${username}`);
+    if (!users[0]) throw new NotFoundError(`No User: ${username}`);
 
-    return user;
+    return users;
   }
 
   /** Update user data with `data`.

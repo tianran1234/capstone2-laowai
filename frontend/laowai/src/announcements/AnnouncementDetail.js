@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import LaoWaiApi from "../api/api";
-import LoadingSpinner from "../common/LoadingSpinner";
 import "./AnnouncementDetail.css";
 
 /** Announcement Detail page.
@@ -28,7 +27,13 @@ function AnnouncementDetail() {
   }, [id]);
 
 
-  if (!announcement) return <LoadingSpinner />;
+  if (!announcement) return (
+    <div>
+      <h4>Sorry, the announcement doesn't exist.</h4>
+      <Link to={`/announcements`}><button>Go back</button></Link>
+    </div>
+  )
+  
 
   return (
     <div>

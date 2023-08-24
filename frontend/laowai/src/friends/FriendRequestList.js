@@ -58,7 +58,7 @@ function FriendRequestList() {
           <h4 className="lead">No new friend request.</h4>
         )
       }
-      <Link to={`/${username}`}><button>Go back</button></Link>
+      <Link to={`/users/${username}`}><button>Go back</button></Link>
     </div>
   );
 }

@@ -61,7 +61,7 @@ function PostList() {
               ))}
             </div>
         ) : (
-          <p className="lead">No post created yet. Would you like to share your thoughts?</p>
+          <p className="lead">No post created yet.</p>
         )
       }
       <Link to={`/users/${username}`}><button>Go back</button></Link>

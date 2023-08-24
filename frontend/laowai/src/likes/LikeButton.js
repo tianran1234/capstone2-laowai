@@ -17,8 +17,6 @@ function LikeButton({likes, removeLike, addLike}) {
     }
   };
 
-  console.log(like);
-
 
   return (
       <div className="LikeButton col-md-8 offset-md-2">

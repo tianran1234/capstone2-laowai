@@ -60,7 +60,7 @@ function FriendList() {
           <p className="lead">Sorry, you haven't added any friends yet!</p>
         )
       }
-      <Link to={`/${username}`}><button>Go back</button></Link>
+      <Link to={`/users/${username}`}><button>Go back</button></Link>
     </div>
   );
 }
