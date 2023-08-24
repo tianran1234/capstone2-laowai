@@ -1,8 +1,22 @@
-# Capstone2-LaoWai website
+# Capstone2-LaoWai website (http://localhost:3000/)
 
 This is a social media website dedicated to connect all Chinese language learners, to create a platform where Chinese educators can share their resources and information beyond classroom, and where the language learners can meet each other, practice with other fellow learners, ask questions, post answers, share their daily lives etc. 
 
 It includes the postgresql database, the flask backend and the react.js front end of the LaoWai app.
+
+
+## LaoWai API
+List all announcements: 
+http://localhost:3001/announcements
+
+Look up details of a single announcement by id: 
+http://localhost:3001/announcements/1
+
+List all forum questions:
+http://localhost:3001/forum
+
+Look up details of a single question with answers if there is any:
+http://localhost:3001/forum/1
 
 
 ## Installation
