@@ -5,6 +5,10 @@ This is a social media website dedicated to connect all Chinese language learner
 It includes the postgresql database, the flask backend and the react.js front end of the LaoWai app.
 
 
+## technology stack used:
+PostgreSQL, node.js, express.js, react.js, jest
+
+
 ## LaoWai API
 
 List all announcements: 
@@ -119,7 +123,8 @@ npm start
 
 ### Credentials
 A user's account has been created in the database. Once may use the credentails below to utilize the full functions of this app:
-username: testuser1
+
+username: testuser1;
 password: password
 
 ### Homepage
@@ -127,34 +132,27 @@ The browser will automatically direct you to the designated portal (http://local
 
 Here is a screen shot of the homepage: 
 ![laowai-homepage](https://github.com/tianran1234/laowai/assets/115170399/83d32283-3525-411a-bb39-f20152314066)
- 
 A user will be able to browse the announcements and the forum (including questions along with answers if there is any) without sign up or log in their own account.
 
 ### Announcements
 If one click on the "announcements" tab on the homepage, they will be directed to the announcement page. Here is a screen shot of the announcments page:
 ![announcements](https://github.com/tianran1234/laowai/assets/115170399/8f66c651-55db-4312-b3db-80e3b372ec0e)
-
 Since one is not logged in, if one click on "request to make an announcement" button, they will be prompt to the log in page, as shown in the screen shot below:
 ![login](https://github.com/tianran1234/laowai/assets/115170399/f2d02afe-93c8-4271-a674-a70d380b66e3)
-
 However, for a logged in user, they will see the request form like below:
 ![announcementrequest](https://github.com/tianran1234/laowai/assets/115170399/8474939e-acdf-4f40-b902-6a8b19d95b11)
-
 Once you click on the title of an announcement, you will be able to view the details. Here is a screen shot of an announcement:
 ![announcement](https://github.com/tianran1234/laowai/assets/115170399/9b750f37-bc4a-46df-877f-d4482844a116)
 
 ### Forum
 If one click on the "forum" tab on the homepage, they will be directed to the forum page as shown below:
 ![forum](https://github.com/tianran1234/laowai/assets/115170399/e944daa9-c402-447e-a5bf-ebfc2905e6f6)
-
 Since one is not logged in, if one click on "post a question" button, they will be prompt to the log in page.
 
 However, for a logged in user, they will see the question form like below:
 ![questionform](https://github.com/tianran1234/laowai/assets/115170399/c035bab6-7d61-4b89-a335-4a739046f818)
-
 Once you click on the title of a question, you will be able to view the details of the question along with any answers. Here is a screen shot of:
 ![question](https://github.com/tianran1234/laowai/assets/115170399/43dcdef8-dfcf-42c8-b21a-b24f5fb7d745)
-
 Since one is not logged in, if one click on "post an answer" button, they will be prompt to the log in page.
 
 However, for a logged in user, they will see the answer form like below:
@@ -165,19 +163,16 @@ A user can register/log in account by click on the "Log in" or "Sign up" tab on 
 
 Here is a screen shot of what a sign up page looks like:
 ![singup](https://github.com/tianran1234/laowai/assets/115170399/3465674e-7bb0-4668-88ce-6e4b41c94627)
-
 Once registered/logged in, they will be able to send request to make an announcement, to post a question on forum, or to post answers to forum questions, as well as access their personal account. 
 
 ### Account
 A user can access their peronal account by click on the "Account" tab on the homepage as shown below:
 ![account](https://github.com/tianran1234/laowai/assets/115170399/fe78364e-88d3-4e9e-98a5-39f763e96fb4)
-
 On their personal page, it will display some of the user’s personal information (username, affiliation, proficiency in Chinese, hometown, current city etc). A user will also be able to make new personal posts, manage their current friend list and accept/decline any friend requests.
 
 ### Search
 A logged in user will also be able to visit other users’ personal pages by typing the username they need to look up in the search box in the navigation bar as shown below:
 ![search](https://github.com/tianran1234/laowai/assets/115170399/e1ae2fe3-ed52-4e91-8dc5-b38303df1b7f)
-
 A user can view other user's posts and like/unlike the posts. They will also be able to send friend request/unfriend that user. But they won’t be able to access other users’ friend requests or friend lists.
 
 
