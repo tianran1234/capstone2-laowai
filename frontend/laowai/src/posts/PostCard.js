@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
  * PostList -> PostCard
  */
 
-function PostCard({ id, username, body, postedat }) {
+function PostCard({ id, username, body, postdate }) {
   console.debug("PostCard", id);
 
 
@@ -19,7 +19,7 @@ function PostCard({ id, username, body, postedat }) {
           <h6 className="card-body">
             {body}
           </h6>
-          <p>Posted by {username} at: {postedat}</p>
+          <p>Posted by {username} at: {postdate}</p>
         </div>
       </Link>
   );
