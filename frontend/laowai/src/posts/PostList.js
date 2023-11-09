@@ -56,7 +56,7 @@ function PostList() {
                         id={p.id}
                         body={p.body}
                         pic={p.pic}
-                        postedat={p.postedat}
+                        postdate={p.postdate}
                     />
               ))}
             </div>
